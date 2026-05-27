@@ -1,0 +1,14 @@
+.backdrop { position: fixed; inset: 0; background: rgba(10,10,16,0.75); display: flex; align-items: center; justify-content: center; z-index: 200; }
+.toast {
+  background: var(--surface); border: 1px solid rgba(192,57,43,0.35); border-radius: 16px;
+  padding: 28px 36px; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  max-width: 360px; text-align: center;
+  animation: toastIn 0.4s cubic-bezier(0.34,1.56,0.64,1);
+}
+@keyframes toastIn { from{transform:scale(0.85);opacity:0} to{transform:scale(1);opacity:1} }
+.badge { background: rgba(192,57,43,0.12); border: 1px solid rgba(192,57,43,0.3); border-radius: 20px; padding: 4px 14px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-red); }
+.num { font-size: 52px; font-weight: 900; line-height: 1; }
+.name { font-size: 18px; font-weight: 700; color: var(--accent-red); }
+.hint { font-size: 12px; color: var(--text-muted); line-height: 1.55; }
+.prevScore { background: rgba(39,174,96,0.08); border: 1px solid rgba(39,174,96,0.2); border-radius: 8px; padding: 8px 16px; font-size: 12px; color: var(--green); font-weight: 700; width: 100%; text-align: center; }
+.btn { background: var(--accent-red); color: #fff; border: none; border-radius: 8px; padding: 11px 0; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; width: 100%; }

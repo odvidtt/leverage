@@ -1,0 +1,8 @@
+.panel { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+.totalRow { display: flex; align-items: baseline; gap: 4px; }
+.totalLabel { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; flex: 1; }
+.total { font-size: 28px; font-weight: 900; }
+.total[data-accent="red"] { color: var(--accent-red); }
+.total[data-accent="green"] { color: var(--green); }
+.totalMax { font-size: 13px; color: var(--text-muted); }
+.bars { display: flex; flex-direction: column; gap: 8px; }

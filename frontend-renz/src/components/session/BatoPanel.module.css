@@ -1,0 +1,31 @@
+.panel { display: flex; flex-direction: column; align-items: center; gap: 24px; flex: 1; justify-content: center; padding: 24px; }
+.avatarWrap { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.ring {
+  width: 160px; height: 160px; border-radius: 50%;
+  padding: 4px; transition: box-shadow 0.4s ease;
+}
+.ring[data-emotion="guarded"]    { box-shadow: 0 0 0 3px var(--emotion-guarded),    0 0 32px rgba(139,92,246,0.3); }
+.ring[data-emotion="suspicious"] { box-shadow: 0 0 0 3px var(--emotion-suspicious), 0 0 32px rgba(109,40,217,0.3); }
+.ring[data-emotion="angry"]      { box-shadow: 0 0 0 3px var(--emotion-angry),      0 0 32px rgba(220,38,38,0.3); }
+.ring[data-emotion="exhausted"]  { box-shadow: 0 0 0 3px var(--emotion-exhausted),  0 0 32px rgba(100,116,139,0.3); }
+.ring[data-emotion="sad"]        { box-shadow: 0 0 0 3px var(--emotion-sad),        0 0 32px rgba(71,85,105,0.3); }
+.ring[data-emotion="open"]       { box-shadow: 0 0 0 3px var(--emotion-open),       0 0 32px rgba(59,130,246,0.3); }
+.ring[data-emotion="fearful"]    { box-shadow: 0 0 0 3px var(--emotion-fearful),    0 0 32px rgba(245,158,11,0.3); }
+.ring[data-emotion="hopeful"]    { box-shadow: 0 0 0 3px var(--emotion-hopeful),    0 0 32px rgba(14,165,233,0.3); }
+.ring[data-emotion="resolved"]   { box-shadow: 0 0 0 3px var(--emotion-resolved),   0 0 32px rgba(39,174,96,0.3); }
+.ring[data-speaking="true"]      { animation: speakPulse 1s ease-in-out infinite; }
+@keyframes speakPulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.03)} }
+.name { font-size: 18px; font-weight: 700; }
+.role { font-size: 11px; color: var(--text-muted); }
+.stageBar { display: flex; align-items: center; }
+.stageStep { display: flex; align-items: center; }
+.stepDot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--border); border: 2px solid var(--border); flex-shrink: 0;
+}
+.stepDone { background: var(--accent-red); border-color: var(--accent-red); }
+.stepActive { background: var(--accent-red); border-color: var(--accent-red); box-shadow: 0 0 8px rgba(192,57,43,0.5); }
+.stepLine { width: 32px; height: 2px; background: var(--border); }
+.stepLineDone { background: var(--accent-red); }
+.stepLabel { display: none; }
+.stepLabelActive { display: block; font-size: 10px; color: var(--accent-red); font-weight: 700; }

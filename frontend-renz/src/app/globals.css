@@ -1,0 +1,31 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-primary: #0D0D12;
+  --surface: #12121A;
+  --border: #2A2A3E;
+  --border-deep: #1A1A28;
+  --accent-red: #C0392B;
+  --green: #27AE60;
+  --orange: #E67E22;
+  --text-primary: #E8E6E0;
+  --text-muted: #6B6B7B;
+  --text-deep: #3A3A4E;
+
+  --emotion-guarded: #8B5CF6;
+  --emotion-suspicious: #6D28D9;
+  --emotion-angry: #DC2626;
+  --emotion-exhausted: #64748B;
+  --emotion-sad: #475569;
+  --emotion-open: #3B82F6;
+  --emotion-fearful: #F59E0B;
+  --emotion-hopeful: #0EA5E9;
+  --emotion-resolved: #27AE60;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+}

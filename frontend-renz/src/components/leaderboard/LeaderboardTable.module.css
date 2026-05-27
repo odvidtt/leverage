@@ -1,0 +1,16 @@
+.wrap { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.head, .row { display: grid; grid-template-columns: 40px 1fr 80px 80px 100px 80px; padding: 10px 16px; align-items: center; }
+.head { border-bottom: 1px solid var(--border); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); }
+.row { border-bottom: 1px solid var(--border-deep); transition: background 0.15s; }
+.row:last-child { border-bottom: none; }
+.row:hover { background: rgba(255,255,255,0.02); }
+.rank { font-size: 12px; font-weight: 700; color: var(--text-muted); }
+.rankTop { color: var(--accent-red); }
+.player { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.avatar { width: 28px; height: 28px; border-radius: 50%; background: var(--border); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: var(--text-muted); }
+.score { font-size: 14px; font-weight: 700; color: var(--text-muted); }
+.scoreHi { color: var(--accent-red); }
+.outcome { font-size: 11px; color: var(--text-muted); }
+.win { color: var(--green); }
+.fail { color: var(--accent-red); }
+.date { font-size: 11px; color: var(--text-deep); }

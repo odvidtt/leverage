@@ -1,0 +1,14 @@
+.overlay {
+  position: fixed; inset: 0; z-index: 200;
+  background: radial-gradient(ellipse at 50% 30%, rgba(39,174,96,0.12) 0%, rgba(10,10,16,0.97) 60%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px;
+}
+.title { font-size: 44px; font-weight: 900; color: var(--green); letter-spacing: -0.03em; }
+.sub { font-size: 14px; color: #C8C6BE; text-align: center; line-height: 1.65; }
+.stats { display: flex; gap: 16px; }
+.stat { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; display: flex; flex-direction: column; align-items: center; gap: 4px; min-width: 80px; }
+.statVal { font-size: 24px; font-weight: 800; color: var(--green); }
+.statLabel { font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.btns { display: flex; gap: 10px; }
+.btnPrimary { background: var(--green); color: #fff; border: none; border-radius: 8px; padding: 11px 22px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; }
+.btnSecondary { background: transparent; border: 1px solid var(--border); border-radius: 8px; padding: 11px 22px; font-size: 13px; color: var(--text-muted); cursor: pointer; font-family: inherit; }

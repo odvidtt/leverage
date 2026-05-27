@@ -1,0 +1,11 @@
+.page { min-height: 100vh; display: flex; flex-direction: column; }
+.hud { height: 48px; display: flex; align-items: center; gap: 16px; padding: 0 24px; background: #0A0A10; border-bottom: 1px solid var(--border); }
+.logo { font-size: 12px; font-weight: 900; }
+.logo span { color: var(--accent-red); }
+.spacer { flex: 1; }
+.newBtn { font-size: 11px; font-weight: 700; padding: 6px 14px; background: var(--accent-red); border: none; border-radius: 6px; color: #fff; cursor: pointer; font-family: inherit; }
+.main { flex: 1; padding: 32px 24px; max-width: 900px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; }
+.title { font-size: 20px; font-weight: 700; }
+.sub { font-size: 13px; color: var(--text-muted); margin-top: 4px; }
+.podium { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; align-items: end; }

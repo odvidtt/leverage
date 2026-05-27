@@ -1,0 +1,21 @@
+.overlay {
+  position: fixed; inset: 0; z-index: 200;
+  background: radial-gradient(ellipse at 50% 20%, rgba(192,57,43,0.18) 0%, rgba(10,10,16,0.98) 55%);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; padding: 24px;
+}
+.title { font-size: 44px; font-weight: 900; color: var(--accent-red); letter-spacing: -0.03em; animation: shake 0.5s ease 0.1s both; }
+@keyframes shake { 0%{transform:translateX(-8px)} 20%{transform:translateX(8px)} 40%{transform:translateX(-6px)} 60%{transform:translateX(6px)} 80%{transform:translateX(-3px)} 100%{transform:none} }
+.sub { font-size: 14px; color: #C8C6BE; text-align: center; line-height: 1.65; }
+.fatalBox { background: rgba(192,57,43,0.1); border: 1px solid rgba(192,57,43,0.28); border-radius: 8px; padding: 10px 16px; font-size: 12px; color: var(--accent-red); max-width: 400px; text-align: center; }
+.stat { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.statVal { font-size: 24px; font-weight: 800; color: var(--accent-red); }
+.statLabel { font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.breakdown { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 14px 20px; width: 100%; max-width: 380px; }
+.breakdownTitle { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 10px; }
+.breakdownRow { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid var(--border-deep); }
+.breakdownRow:last-child { border-bottom: none; }
+.brName { font-size: 11px; color: var(--text-muted); }
+.brDetail { font-size: 11px; font-weight: 700; color: var(--accent-red); }
+.btns { display: flex; gap: 10px; }
+.btnPrimary { background: var(--accent-red); color: #fff; border: none; border-radius: 8px; padding: 11px 22px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; }
+.btnSecondary { background: transparent; border: 1px solid var(--border); border-radius: 8px; padding: 11px 22px; font-size: 13px; color: var(--text-muted); cursor: pointer; font-family: inherit; }
